@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulario de Registro</h1>
+        <h2>Realizado por: <span>Alex Suarez</span></h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label>Nombre completo:</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            <label>Contraseña:</label>
+            <input type="password" name="clave" placeholder="Crea una contraseña" required>
+            <label>Correo electrónico:</label>
+            <input type="email" name="correo" placeholder="usuario@correo.com" required>
+            <label>Edad:</label>
+            <input type="number" name="edad" min="1" max="99">
+            <label>Teléfono:</label>
+            <input type="tel" name="telefono" placeholder="+593...">
+            <label>Página web:</label>
+            <input type="url" name="pagina" placeholder="https://AlexTeLoCompra.com">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nac">
+            <label>Hora de cita:</label>
+            <input type="time" name="hora_cita">
+            <label>Fecha y hora del evento:</label>
+            <input type="datetime-local" name="evento">
+            <label>Mes de pago:</label>
+            <input type="month" name="mes_pago">
+            <label>Semana actual:</label>
+            <input type="week" name="semana">
+            <label>Color favorito:</label>
+            <input type="color" name="color_fav">
+            <label>Nivel de satisfacción:</label>
+            <input type="range" name="nivel" min="0" max="10">
+            
+            <label>Género:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="genero" value="M"> Masculino</label>
+                <label><input type="radio" name="genero" value="F"> Femenino</label>
+            </div>
+
+            <label>Intereses:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interes" value="tecnologia"> Tecnología</label>
+                <label><input type="checkbox" name="interes" value="deporte"> Deporte</label>
+                <label><input type="checkbox" name="interes" value="arte"> Arte</label>
+            </div>
+
+            <label>Subir archivo:</label>
+            <input type="file" name="foto">
+            <input type="hidden" name="id" value="001">
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
